@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<!--
+	Name: Yasinul Ashraf
+	Date: 05/06/2015
+-->
+<TITLE>Limitless Gym Home</TITLE>
+
+<LINK rel="stylesheet" type="text/css" href="Final.css">
+
+</HEAD>
+
+<BODY onLoad="startup()">
+
+<H1 style="text-align:center"><img src="Logo.jpg"></H1><hr/>
+	<!--
+		Source: https://lh3.googleusercontent.com/-yhhla85KoPA/VNYSoIBU_QI/AAAAAAAACac/CMpEiz0892I/s1600/wallpapers-for-gt-boxing-gloves-wallpaper.jpg
+	-->
+
+
+<FONT size="6%">
+
+<TABLE align="center" width="1000">
+<tr>
+<th>
+<a href="Index.html">Home</a>
+</th>
+
+<th>
+<a href="Gym_Floors.html">Gym<br>Floors</a>
+</th>
+
+<th>
+<a href="Results.html">Results</a>
+</th>
+
+<th>
+<a href="Membership.html">About<br>Us</a>
+</th>
+
+<th>
+<a href="Registration.html">Join!</a>
+</th>
+</tr>
+</TABLE>
+<HR/>
+
+<SCRIPT>
+
+var imgArray = new Array(6);
+var str = new Array(6);
+var index = 0;
+
+function cycle()
+{
+	document.banner.src = imgArray[index].src;
+	document.getElementById("text").innerHTML=str[index].fontsize(6).fontcolor("white");
+  
+	index++;
+	if (index > 5)
+	{
+	index = 0;
+	}
+	setTimeout("cycle()", 5000);
+	return;
+}
+
+function startup()
+{
+
+	imgArray[0] = new Image;
+	imgArray[0].src = "Home.jpg";
+		//Source: http://static.wallpedes.com/wallpaper/fitness/fitness-inspiration-iphone-wallpaper-wallpapers-for-gt-inspirational-fitness-wallpapers-for-desktop-hd-mobile-with-quotes-facebook-android-free-download-wallpaper-iphone-backgrounds.jpg
+  
+	imgArray[1] = new Image;
+	imgArray[1].src = "Home1.jpg"
+		//Source: http://vidafitness.com/images/locations/cv/12.jpg
+
+	imgArray[2] = new Image;
+	imgArray[2].src = "Home2.jpg";
+		//Source: http://www.parkermeridien.com/media/gravity_fitness.jpg
+
+	imgArray[3] = new Image;
+	imgArray[3].src = "Home3.jpg";
+		//Source: http://uniteens.org/wp-content/uploads/2015/03/boxing-training.jpg
+
+	imgArray[4] = new Image;
+	imgArray[4].src = "Home4.jpg";
+		//Source: http://cdn.c.photoshelter.com/img-get2/I0000zWdUotN3cb8/fit=1000x750/Seattle-Fitness-Photographer-2.jpg
+
+	imgArray[5] = new Image;
+	imgArray[5].src = "Home5.jpg";
+		//Source: http://www.curtsultimate.com/wp-content/uploads/2012/01/Portland-Kickboxing-Classes.jpg
+
+
+	str[0] = "<BLOCKQUOTE>We believe that to achieve something you've never had before, you must do something you've never done before.</BLOCKQUOTE>";
+		//Source: http://blog.thegymlifestyle.com/top-100-gym-quotes/
+
+	str[1] = "<BLOCKQUOTE>“Physical fitness can neither be achieved by wishful thinking nor outright purchase.”<br/>  – Joseph Pilates</BLOCKQUOTE>";
+		//Source: http://chrismccombs.net/80-quotes-about-training/
+
+	str[2] = "<BLOCKQUOTE>“The best activities for your health are pumping and humping.”<br/>  – Arnold Schwarzenegger</BLOCKQUOTE>";
+		//Source: http://chrismccombs.net/80-quotes-about-training/
+
+	str[3] = "<BLOCKQUOTE>“I hated every minute of training, but I said, 'Do not quit. Suffer now and live the rest of your life as a champion.'”<br/>  – Muhammad Ali</BLOCKQUOTE>";
+		//Source:http://chrismccombs.net/80-quotes-about-training/
+
+	str[4] = "<BLOCKQUOTE>“The pain of discipline is nothing like the pain of disappointment.”<br/>  – Justin Langer</BLOCKQUOTE>";
+		//Source:http://chrismccombs.net/80-quotes-about-training/
+
+	str[5] = "<BLOCKQUOTE>“The resistance that you fight physically in the gym and the resistance that you fight in life can only build a strong character.”<br/> – Arnold Schwarzenegger</BLOCKQUOTE>";
+		//Source:http://chrismccombs.net/80-quotes-about-training/ 
+
+	cycle();
+	return;
+}
+
+</SCRIPT>
+
+<CENTER><DIV>
+<p style="text-align:center">Welcome to the <b><i>Limitless Gym</b></i>,<br> where we help change the lives of our members.</P>
+	<img name="banner" src="Home.jpg"> 	
+	<p id="text"></p>
+</DIV>
+
+<DIV>
+
+<h2>Location</h2>
+<p>We are located in <br/> 300 Jay St, Brooklyn, NY-11201</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0224459702295!2d-73.9877144!3d40.69550330000001!
+2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4a146f1651%3A0x5b7ee07accb21168!2s300+Jay+St%2C+Brooklyn%2C+NY+
+11201!5e0!3m2!1sen!2sus!4v1431803668981" width="600" height="450" frameborder="0" style="border:0"></iframe>
+
+<!-- 
+	Source: Google Maps 
+-->
+
+</DIV>
+
+<DIV>
+<h2>Hours of Operation</h2>
+<TABLE>
+
+<tr>
+<th>We are open 24/7</th>
+</tr>
+<tr>
+<td>Except for all major holidays</td>
+</tr>
+
+</TABLE>
+
+</DIV></CENTER>
+
+<h4 style="text-align: right"><a href="#TOP">Back to Top</a></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+	Name: Yasinul Ashraf
+	Date: 05/06/2015
+-->
+<title>Limitless Gym Results</title>
+
+<link rel="stylesheet" type="text/css" href="Final.css">
+
+<SCRIPT>
+
+var imgArray = new Array(4);
+var str = new Array(4);
+var index = 0;
+
+function cycle()
+{
+	document.banner.src = imgArray[index].src;
+	document.getElementById("text").innerHTML=str[index].fontsize(6).fontcolor("white");
+  
+	index++;
+	if (index > 4)
+	{
+	index = 0;
+	}
+	setTimeout("cycle()", 4000);
+	return;
+}
+
+function startup()
+{
+	imgArray[0] = new Image;
+	imgArray[0].src = "BeforeandAfterWeightLoss1.jpg"
+		//Source: http://www.beforeandafterz.com/wp-content/uploads/2012/02/BeforeandAfterWeightLoss1.jpg
+
+	imgArray[1] = new Image;
+	imgArray[1].src = "BeforeandAfterWeightLoss2.jpg";
+		//Source: http://i.ytimg.com/vi/VPsszzFwru8/hqdefault.jpg
+
+	imgArray[2] = new Image;
+	imgArray[2].src = "BeforeandAfterWeightLoss3.jpg";
+		//Source: http://cdn.smosh.com/sites/default/files/ftpuploads/bloguploads/0513/before-after-weight-loss-green-dress.jpg
+
+	imgArray[3] = new Image;
+	imgArray[3].src = "BeforeandAfterWeightLoss4.jpg";
+		//Source: http://weight-loss-before-and-after.com/wp-content/uploads/2014/08/before_and_after_weight_loss_insanity.jpg
+
+	imgArray[4] = new Image;
+	imgArray[4].src = "BeforeandAfterWeightLoss5.jpg";
+		//Source: http://getslim.autoblogsell.com/wp-content/uploads/Before-and-after-weight-loss.jpg
+
+	str[0] = "<BLOCKQUOTE>Meet Douglas<br/>He lost 78 lbs since he joined 11 months ago.</BLOCKQUOTE>";
+	str[1] = "<BLOCKQUOTE>Meet Cathy<br/>She lost 38 lbs since she joined 5 months ago.</BLOCKQUOTE>";
+	str[2] = "<BLOCKQUOTE>Meet Selena<br/>She lost 75 lbs since she joined 14 months ago.</BLOCKQUOTE>";
+	str[3] = "<BLOCKQUOTE>Meet Cameron<br/>He lost 58 lbs since he joined 9 months ago.</BLOCKQUOTE>";
+	str[4] = "<BLOCKQUOTE>Meet Andria<br/>She lost 42 lbs since she joined 10 months ago.</BLOCKQUOTE>";
+
+	cycle();
+	return;
+}
+
+</SCRIPT>
+
+</head>
+
+<BODY onLoad="startup()">
+
+<H1 style="text-align:center"><img src="Logo.jpg"></H1><hr/>
+	<!--
+		Source: https://lh3.googleusercontent.com/-yhhla85KoPA/VNYSoIBU_QI/AAAAAAAACac/CMpEiz0892I/s1600/wallpapers-for-gt-boxing-gloves-wallpaper.jpg
+	-->
+
+<FONT size="6%">
+
+<TABLE align="center" width="1000">
+<tr>
+<th>
+<a href="Index.html">Home</a>
+</th>
+
+<th>
+<a href="Gym_Floors.html">Gym<br>Floors</a>
+</th>
+
+<th>
+<a href="Results.html">Results</a>
+</th>
+
+<th>
+<a href="Membership.html">About<br>Us</a>
+</th>
+
+<th>
+<a href="Registration.html">Join!</a>
+</th>
+</tr>
+</TABLE>
+<HR/>
+
+<CENTER><DIV>
+<p>Here are some pictures of our members who changed their lives by working hard and being strong.</p>
+	<img name="banner" src=".jpg"> 	
+	<p id="text"></p>
+</DIV>
+
+<h4 style="text-align: right"><a href="#TOP">Back to Top</a></font>
+
+</body>
+</html>
+
+
+ 

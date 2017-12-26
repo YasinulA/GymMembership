@@ -1,0 +1,57 @@
+body
+{
+background-image:url("Background.jpg");
+<!--
+	Source: http://vignette3.wikia.nocookie.net/steamtradingcards/images/f/ff/Real_Boxing_Profile_Background_Gloves.jpg/revision/latest?cb=20140913100645
+-->
+background-repeat:repeat;
+}
+
+div 
+{
+background-color: #6b6161;
+width: 800px;
+padding: 25px;
+border: 1px solid black;
+margin: 25px;
+opacity: 0.85;
+filter: Alpha(opacity=100);
+}
+
+h1
+{
+style: text-align="center";
+color:orange;
+font-family:'Courier New';
+}
+
+h2
+{
+style: text-align="center";
+color:red;
+font-family:'Arial Black';
+}
+
+h3
+{
+color:white;
+}
+
+p
+{
+font-family:'Tahoma';
+}
+
+font
+{
+color:black;
+font-family:'Courier New';
+}
+
+a:link{color:blue}
+a:visited{color:orange}
+a:active{color:red}
+a:hover{color:#800000}
+a:hover{background:pink}
+
+

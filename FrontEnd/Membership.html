@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<!-- 
+	Name: Yasinul Ashraf
+	Date: 05/08/2015
+-->
+<TITLE>Limitless Gym Membership</TITLE>
+
+<LINK rel="stylesheet" type="text/css" href="Final.css">
+
+</HEAD>
+
+<SCRIPT>
+
+var imgArray = new Array(9);
+var str = new Array(9);
+var index = 0;
+
+function cycle()
+{
+	document.banner.src = imgArray[index].src;
+
+  
+	index++;
+	if (index > 8)
+	{
+	index = 0;
+	}
+	setTimeout("cycle()", 3000);
+	return;
+}
+
+function startup()
+{
+
+	imgArray[0] = new Image;
+	imgArray[0].src = "Cardio1.jpg";
+		//Source: http://slickzine.com/wp-content/uploads/2012/02/Luxury-Hotel-Beirut-Gym.jpg
+  
+	imgArray[1] = new Image;
+	imgArray[1].src = "Weight1.jpg";
+		//Source: http://www.washingtonian.com/blogs/wellbeing/images/gym_1.jpg
+
+	imgArray[2] = new Image;
+	imgArray[2].src = "Box1.jpg";
+		//Source: http://www.curtsultimate.com/wp-content/uploads/2012/01/Portland-Kickboxing-Classes.jpg
+
+	imgArray[3] = new Image;
+	imgArray[3].src = "Cardio2.jpg";
+		//Source: http://www.omnihotels.com/-/media/images/hotels/ausrst/activities/ausrst-omni-barton-creek-resort-cardio-area.jpg?h=660&la=en&w=1170
+
+	imgArray[4] = new Image;
+	imgArray[4].src = "Weight2.jpg";
+		//Source: http://therunningdoc.com/wp-content/uploads/2013/01/Weight-Room.jpg
+
+	imgArray[5] = new Image;
+	imgArray[5].src = "Box2.jpg";
+		//Source: http://postpt.com/web/wp-content/uploads/2014/11/201_1kampala_boxing_3273.jpg
+
+	imgArray[6] = new Image;
+	imgArray[6].src = "Cardio3.jpg";
+		//Source: http://www.chicagomag.com/Chicago-Magazine/February-2013/Best-Gyms-Over-80-A-Month/eastbank.jpg
+
+	imgArray[7] = new Image;
+	imgArray[7].src = "Weight3.jpg";
+		//Source: http://www.grandhotelminneapolis.com/design/images/slideshow/mgh_lifetime_freeweights.jpg
+
+	imgArray[8] = new Image;
+	imgArray[8].src = "Box3.jpg";
+		//Source: http://chicago-lincolnpark.titleboxingclub.com/wp-content/uploads/sites/133/2013/05/BoxingMan1.jpg
+
+
+	cycle();
+	return;
+}
+
+</SCRIPT>
+
+<BODY onLoad="startup()">
+
+<H1 style="text-align:center"><img src="Logo.jpg"></H1><hr/>
+	<!--
+		Source: https://lh3.googleusercontent.com/-yhhla85KoPA/VNYSoIBU_QI/AAAAAAAACac/CMpEiz0892I/s1600/wallpapers-for-gt-boxing-gloves-wallpaper.jpg
+	-->
+
+<FONT size="6%">
+
+<TABLE align="center" width="1000">
+<tr>
+<th>
+<a href="Index.html">Home</a>
+</th>
+
+<th>
+<a href="Gym_Floors.html">Gym<br>Floors</a>
+</th>
+
+<th>
+<a href="Results.html">Results</a>
+</th>
+
+<th>
+<a href="Membership.html">About<br>Us</a>
+</th>
+
+<th>
+<a href="Registration.html">Join!</a>
+</th>
+</tr>
+</TABLE>
+<HR/>
+
+<br/>
+
+
+<center>
+<div>
+<TABLE border="1" cellpadding="10" style="text-align:center" width="500">
+
+<tr>
+<th><a href="#Gallery">Gallery</a></th>
+<th><a href="#Membership">Types of <br/>Membership</a></th>
+<th><a href="#Contact">Contact Us</a></th>
+</tr>
+
+</TABLE></div>
+
+<div><h2 style="text-align: center"><b><a name="Gallery">Gym Gallery</a></b></h2>	
+	<img name="banner" src="Cardio.jpg"> 	
+	<p id="text"></p>
+
+</div>
+
+<div>
+
+<h2 style="text-align: center"><a name="Membership">Our Memberships</a></h2>
+
+<TABLE border="1" cellpadding="10" style="text-align:center" width="700">
+
+<tr>
+<th></th>
+<th>Regular Membership</th>
+<th>Premium Membership</th>
+</tr>
+
+<tr>
+<th>Cardio</th>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<th>Weight</th>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<th>Boxing</th>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<th>Personal<br/>Trainer</th>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<th>Free<br/>T-Shirt</th>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<th>Other<br/>Benefits</th>
+<td>None</td>
+
+<td>
+<ul>
+<li>10% off on all Modell's products.</li>
+<li>10% off on all Protein shake products.</li>
+<li>10% off on all Asics products.</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th>Price</th>
+<td>$19.99/month</td>
+<td>$29.99/month</td>
+</tr>
+
+</TABLE></div>
+
+<div>
+
+<h2 style="text-align: center"><b><a name="Contact">Have any questions?</a></b></h2>
+
+<a href = "mailto:yasinulashraf@yahoo.com">Contact The Limitless Gym</a></font>
+
+</div>
+
+<h2 style="text-align: right"><a href="#TOP">Back to Top</a>
+
+</BODY>
+</HTML>

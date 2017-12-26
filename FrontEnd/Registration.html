@@ -1,0 +1,224 @@
+<DOCTYPE HTML>
+<HTML>
+<HEAD>
+<!--
+	Name: Yasinul Ashraf
+	Date: 05/06/2015
+-->
+<TITLE>Limitless Gym Form</TITLE>
+
+<LINK rel="stylesheet" type="text/css" href="Final.css">
+
+<SCRIPT src="Final.js" type = "text/javascript">
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<H1 style="text-align:center"><img src="Logo.jpg"></H1><hr/>
+	<!--
+		Source: https://lh3.googleusercontent.com/-yhhla85KoPA/VNYSoIBU_QI/AAAAAAAACac/CMpEiz0892I/s1600/wallpapers-for-gt-boxing-gloves-wallpaper.jpg
+	-->
+
+<TABLE align="center" width="1000">
+<tr>
+<th>
+<a href="Index.html"><h1>Home</h1></a>
+</th>
+
+<th>
+<a href="Gym_Floors.html"><h1>Gym<br>Floors</h1></a>
+</th>
+
+<th>
+<a href="Results.html"><h1>Results</h1></a>
+</th>
+
+<th>
+<a href="Membership.html"><h1>About<br>Us</h1></a>
+</th>
+
+<th>
+<a href="Registration.html"><h1>Join!</h1></a>
+</th>
+</tr>
+</TABLE>
+<HR/>
+
+<center><div>
+
+<FORM name="form" method="post" onsubmit="return  validation()">
+
+<FONT size="6%" face="Courier New">
+
+<FIELDSET>
+<LEGEND>Personal Information</LEGEND>
+<center><TABLE>
+
+<tr>
+<th>First Name:</th>
+<td><input type="text" name="firstName" size="25" maxLength="15"></td>
+</tr>
+
+<tr>
+<th>Last Name:</th>
+<td><input type="text" name="lastName" size="25" maxLength="15"></td>
+</tr>
+
+<tr>
+<th>Email:</th>
+<td><input type="email" name="email" size="25" maxLength="25"></td>
+</tr>
+
+<tr>
+<th>Gender:</th>
+<td>
+<input type="radio" name="gender"/>Male
+<input type="radio" name="gender"/>Female
+</td>
+</tr>
+
+<tr>
+<th>Date of Birth:</th>
+<td>
+<input type="text" placeholder="mm" name="bmonth" size="2" maxLength="2"> /
+<input type="text" placeholder="dd" name="bdate" size="2" maxLength="2"> /
+<input type="text" placeholder="yyyy" name="byear" size="4" maxLength="4">
+</td>
+</tr>
+
+<tr>
+<th>Height:</th>
+<td>
+<input type="text" name="ft" size="2" maxLength="2"> ft
+<input type="text" name="inch" size="2" maxLength="2"> inches
+</td>
+</tr>
+
+<tr>
+<th>Current Weight:</th>
+<td><input type="text" name="weight" size="5" maxLength="3"> lbs</td>
+</tr>
+
+<tr>
+<th>Target Weight:</th>
+<td><input type="text" name="wtarget" size="5" maxLength="3"> lbs</td>
+</tr>
+
+<tr>
+<th>Phone:</th>
+<td><input type="text" name="phone" size="25" maxLength="10"></td>
+</tr>
+
+<tr>
+<th>Address:</th>
+<td><input type="text" name="address" size="25" maxLength="25"></td>
+</tr>
+
+<tr>
+<th>City:</th>
+<td><input type="text" name="city" size="25" maxLength="25"></td>
+</tr>
+
+<tr>
+<th>Borough:</th>
+<td><select name="borough">
+<option>- select -
+<option>Brooklyn
+<option>Bronx
+<option>Manhattan
+<option>Queens
+<option>Staten Island
+</td></tr>
+
+<tr>
+<th>State:</th>
+<td><b>New York</b></td>
+</tr>
+
+<tr>
+<th>Zip Code:</th>
+<td><input type="text" name="zip" size="5" maxLength="5"></td>
+</tr>
+
+</TABLE>
+</FIELDSET>
+<br>
+
+<FIELDSET>
+<LEGEND>Card Information</LEGEND>
+<center><TABLE>
+
+<tr>
+<th>Payment method:</th>
+<td>
+<input type="radio" name="ctype"/>Credit Card
+<input type="radio" name="ctype"/>Debit Card
+</td>
+</tr>
+
+<tr>
+<th>Card Number:</th>
+<td><input type="text" name="cnum" size="25" maxLength="20"></td>
+</tr>
+
+<tr>
+<th>CVC / CVV:</th>
+<td><input type="password" name="cvc" size="5" maxLength="4"></td>
+</tr>
+
+<tr>
+<th>Expiration:</th>
+<td>
+<input type="text" placeholder="mm" name="exmon" size="2" maxLength="2"> /
+<input type="text" placeholder="yyyy" name="expyear" size="4" maxLength="4">
+</td>
+</tr>
+
+</TABLE>
+</FIELDSET>
+<br>
+
+<FIELDSET>
+<LEGEND>Membership Information</LEGEND>
+<center><TABLE>
+
+<tr>
+<th>Membership:</th>
+<td>
+<input type="radio" name="membership"/>Regular- $19.99
+<br>
+<input type="radio" name="membership"/>Premium- $29.99
+</td>
+</tr>
+
+<tr>
+<th>How did you hear about us?</th>
+<td>
+<input type="checkbox" name="refer"/>Friend
+<input type="checkbox" name="refer"/>Internet
+<br/>
+<input type="checkbox" name="refer"/>Newspaper
+<input type="checkbox" name="refer"/>Radio
+</td>
+</tr>
+
+<tr>
+<th>Do you have any<br>medical history you<br/>need to share with us?</th>
+<td><textarea ROWS="4" COLS="40"> </textarea></td>
+</tr>
+
+</TABLE>
+</FIELDSET>
+
+<input type="submit" name="sub" value="Submit" onClick="ShowDateTime()">
+<input type="reset" name="reset" value="Clear">
+
+</div>
+
+<h4 style="text-align: right"><a href="#TOP">Back to Top</a></FONT>
+</FORM>
+</BODY>
+</HTML> 
